@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakerHub - Produk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" style="color: #fff; text-decoration: none;">SneakerHub</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="produk.html" class="nav-link active">Produk</a></li>
+                    <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- cart modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2>Keranjang Belanja</h2>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Keranjang belanja Anda kosong</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">Rp 0</span>
+                </div>
+                <button class="btn-checkout" id="checkoutBtn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products-section">
+        <div class="container">
+            <h2 class="section-title">Koleksi Sepatu Pria 2025</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="running">Running</button>
+                <button class="filter-btn" data-category="basket">Basket</button>
+                <button class="filter-btn" data-category="casual">Casual</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="running">
+                    <div class="product-image">
+                        <img src="air.jpg" alt="Nike Air Max 270">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Nike Air Max 270 Men's – Black</div>
+                        <div class="product-price">Rp 1.749.000</div>
+                        <button class="btn-add-cart" 
+                            data-id="1" 
+                            data-name="Nike Air Max 270 Men's – Black" 
+                            data-price="1749000"
+                            data-image="air.jpg">
+                            <i class="fas fa-shopping-cart"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="basket">
+                    <div class="product-image">
+                        <img src="jordan.jpg" alt="Nike Jordan 1">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Nike Air Jordan 1 High – Red</div>
+                        <div class="product-price">Rp 2.299.000</div>
+                        <button class="btn-add-cart" 
+                            data-id="2" 
+                            data-name="Nike Air Jordan 1 High – Red" 
+                            data-price="2299000"
+                            data-image="jordan.jpg">
+                            <i class="fas fa-shopping-cart"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="running">
+                    <div class="product-image">
+                        <img src="addidas.jpg" alt="Adidas Ultraboost">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Adidas Ultraboost 22 – White</div>
+                        <div class="product-price">Rp 2.499.000</div>
+                        <button class="btn-add-cart" 
+                            data-id="3" 
+                            data-name="Adidas Ultraboost 22 – White" 
+                            data-price="2499000"
+                            data-image="addidas.jpg">
+                            <i class="fas fa-shopping-cart"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="casual">
+                    <div class="product-image">
+                        <img src="classic.jpg" alt="Adidas Superstar">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Adidas Superstar Classic – Black</div>
+                        <div class="product-price">Rp 1.299.000</div>
+                        <button class="btn-add-cart" 
+                            data-id="4" 
+                            data-name="Adidas Superstar Classic – Black" 
+                            data-price="1299000"
+                            data-image="classic.jpg">
+                            <i class="fas fa-shopping-cart"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="running">
+                    <div class="product-image">
+                        <img src="rsx.jpg" alt="Puma RS-X">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Puma RS-X Reinvention – Blue</div>
+                        <div class="product-price">Rp 1.599.000</div>
+                        <button class="btn-add-cart" 
+                            data-id="5" 
+                            data-name="Puma RS-X Reinvention – Blue" 
+                            data-price="1599000"
+                            data-image="rsx.jpg">
+                            <i class="fas fa-shopping-cart"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="casual">
+                    <div class="product-image">
+                        <img src="574.jpg" alt="New Balance 574">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">New Balance 574 Core – Grey</div>
+                        <div class="product-price">Rp 1.399.000</div>
+                        <button class="btn-add-cart" 
+                            data-id="6" 
+                            data-name="New Balance 574 Core – Grey" 
+                            data-price="1399000"
+                            data-image="574.jpg">
+                            <i class="fas fa-shopping-cart"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="basket">
+                    <div class="product-image">
+                        <img src="KD15.avif" alt="Nike KD">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Nike KD 15 Basketball – White</div>
+                        <div class="product-price">Rp 2.199.000</div>
+                        <button class="btn-add-cart" 
+                            data-id="7" 
+                            data-name="Nike KD 15 Basketball – White" 
+                            data-price="2199000"
+                            data-image="KD15.avif">
+                            <i class="fas fa-shopping-cart"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="casual">
+                    <div class="product-image">
+                        <img src="taylor.jpg" alt="Converse Chuck">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Converse Chuck Taylor All Star</div>
+                        <div class="product-price">Rp 899.000</div>
+                        <button class="btn-add-cart" 
+                            data-id="8" 
+                            data-name="Converse Chuck Taylor All Star" 
+                            data-price="899000"
+                            data-image="taylor.jpg">
+                            <i class="fas fa-shopping-cart"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="footer-text">© 2025 SneakerHub – All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
