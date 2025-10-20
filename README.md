@@ -1,4 +1,7 @@
 SneakerHub adalah website e-commerce khusus penjualan sepatu sneaker premium. Menyediakan berbagai brand ternama seperti Nike, Adidas, Puma, dan New Balance dengan sistem belanja modern dan user-friendly.
+link presentasi saya
+https://youtu.be/rhmBDzYngsQ
+
 
 1. Tampilan Homenya
    <img width="1912" height="910" alt="Image" src="https://github.com/user-attachments/assets/c8cff115-4812-4549-b09e-0364e0e93425" />
